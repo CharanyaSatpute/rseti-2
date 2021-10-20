@@ -1,0 +1,783 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RSETIMIS</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Custom CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+<div class="row m-0 head_sec">
+<div class="col-md-2 gov_logo"><img src="img/gov-logo.jpg" alt="" ></div>
+<div class="col-md-3 nacer_logo text-center"><img src="img/nacer-logo.png" alt="" ></div>
+<div class="col-md-2 rseti_logo text-center"><img src="img/rseti-logo.jpg" alt="" ></div>
+<div class="col-md-3 rudseti_logo text-center"><img src="img/rudseti.jpg" alt="" ></div>
+<div class="col-md-2 nird_logo text-right"><img src="img/nird-logo.jpg" alt=""></div>
+</div>
+<div class="clearfix"></div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+<div class="container-fluid adminPages">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+
+
+  
+ <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"> <i class="fa fa-user" aria-hidden="true"></i>   User <i class="fa fa-caret-down" aria-hidden="true"></i></a> <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="#"><i class="fa fa-key fa-fw"></i> Change Password</a> </li>
+                                            <li><a href="#" alt=""><i class="fa fa-sign-out fa-fw"></i> Logout</a> </li>
+                                        </ul>
+                                    </li>    
+    </ul>
+    
+  </div>
+  </div>
+</nav>
+</header>
+
+
+<div class="clearfix"></div>
+
+<section class="body_cont">
+<div class="container-fluid d-board">
+<div class="row">
+<div class="col-md-3 sidebar">
+<ul>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+  <li>
+    <a class="btn-link" href="funds-data.html">Funds Data</a>
+  </li>
+    </div>
+</div>
+
+</ul>
+</div>
+<div class="col-md-9 white_bg">
+<div class="row">
+<div class="col-md-12">
+  <h1 class="mb-0">Funds Data</h1></div>
+</div>
+<form id="w0" action="" method="post">
+
+<div class="field_set">
+<h3>Rental expenses advance – post-availing the funds </h3>
+<div class="row odd pt-2">
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Date of release/credit </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Amount </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+</div></div>
+
+
+
+
+</div>
+
+</div>
+
+<div class="field_set">
+<h3>1<sup>st</sup> instalment – pre-availing the funds</h3>
+<div class="row odd pt-2">
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Land Allotted</label>
+<select class="form-control req" id="myselection" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="land">Yes</option>
+<option value="No">No</option>
+</select>
+
+
+</div></div>
+
+<div class="col-md-3">
+<div >
+<div class="form-group">
+<label class="control-label">Upload Documents </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="row odd">
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">If land issues are there after allotment, then the issue in brief with action taken to resolve the issues </label>
+<textarea id="other" name="other" rows="4" cols="50" class="form-control"></textarea>
+</div></div>
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Size/area of land allotted in acres (minimum size of the land must be 0.5 acre)</label>
+<input type="text" id="" class="form-control req" value="" name="" placeholder="" aria-required="true" aria-invalid="true" required="">
+</div></div>
+</div>
+<h4>Address</h4>
+<div class="row odd">
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">House No  </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Village/ Street </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">State Name</label>
+<select class="form-control req" name="state" id="id_state" required="">
+<option value="" selected="">--Select--</option>
+    
+    <option value="1">JAMMU &amp; KASHMIR</option>
+    
+    <option value="2">HIMACHAL PRADESH</option>
+    
+    <option value="3">PUNJAB</option>
+    
+    <option value="4">CHANDIGARH</option>
+    
+    <option value="5">UTTARAKHAND</option>
+    
+    <option value="6">HARYANA</option>
+    
+    <option value="7">Delhi</option>
+    
+    <option value="8">RAJASTHAN</option>
+    
+    <option value="9">UTTAR PRADESH</option>
+    
+    <option value="10">BIHAR</option>
+    
+    <option value="11">SIKKIM</option>
+    
+    <option value="12">ARUNACHAL PRADESH</option>
+    
+    <option value="13">NAGALAND</option>
+    
+    <option value="14">MANIPUR</option>
+    
+    <option value="15">MIZORAM</option>
+    
+    <option value="16">TRIPURA</option>
+    
+    <option value="17">MEGHALAYA</option>
+    
+    <option value="18">ASSAM</option>
+    
+    <option value="19">WEST BENGAL</option>
+    
+    <option value="20">JHARKHAND</option>
+    
+    <option value="21">ODISHA</option>
+    
+    <option value="22">CHHATTISGARH</option>
+    
+    <option value="23">MADHYA PRADESH</option>
+    
+    <option value="24">GUJARAT</option>
+    
+    <option value="25">DAMAN &amp; DIU</option>
+    
+    <option value="26">DADRA &amp; NAGAR HAVELI</option>
+    
+    <option value="27">MAHARASHTRA</option>
+    
+    <option value="28">ANDHRA PRADESH</option>
+    
+    <option value="29">KARNATAKA</option>
+    
+    <option value="30">GOA</option>
+    
+    <option value="31">LAKSHADWEEP</option>
+    
+    <option value="32">KERALA</option>
+    
+    <option value="33">TAMIL NADU</option>
+    
+    <option value="34">PUDUCHERRY</option>
+    
+    <option value="35">ANDAMAN &amp; NICOBAR ISLANDS</option>
+    
+    <option value="36">TELANGANA</option>
+    
+</select>
+
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">District name  </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+</div></div>
+</div>
+
+<div class="row odd">
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Pin Code </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+
+</div>
+<div class="row odd">
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Is possession of land taken? </label>
+<select class="form-control req" required="" >
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Bank's request letter </label>
+<select class="form-control req" required="" id="myselection2">
+ <option value="select" selected="">- Select -</option>
+<option value="upload_doc2">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="drop_cont" id="showUpload_doc2">
+<div class="form-group mt-3">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div>
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Land allotment letter </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3 drop_cont">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Land allotment MoU (if applicable)</label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3 drop_cont">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+
+
+</div>
+
+
+
+<div class="row odd">
+
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">SLBC approval letter </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3 drop_cont">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Bank account details </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3 drop_cont">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+</div>
+
+<div class="row odd fld_sm ">
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Bank declaration stating that bank is ready to start construction within 02 months from date of receipt of funds </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3 drop_cont">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Copy of building plan approved by municipal authorities / gram panchayat </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3 drop_cont">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+</div>
+
+
+<div class="row odd fld_sm ">
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Has the bank dispatched hard copies to NIRDPR? </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3 drop_cont">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Approval of DG-NIRDPR to release the funds: [to be visible only to NIRDPR, to be uploaded by NIRDPR</label>
+<input type="text" id="" class="form-control" value="" name="">
+
+</div></div>
+
+</div>
+</div>
+
+<div class="field_set">
+<h3>1<sup>st</sup> Instalment – post-availing the funds</h3>
+<div class="row odd pt-2">
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Date of credit   </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Amount received  </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">TDS amount deducted, if any</label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Details of issues, if any   </label>
+<textarea id="other" name="other" rows="4" cols="50" class="form-control req" aria-required="true" aria-invalid="true" required=""></textarea>
+
+</div></div>
+</div>
+
+<div class="row odd fld_sm">
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">1<sup>st</sup> instalment release letter with terms & conditions: to be uploaded by NIRDPR  </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+
+</div></div>
+</div>
+</div>
+
+
+<div class="field_set">
+<h3>2<sup>nd</sup> Instalment pre-availing the funds</h3>
+<div class="row odd pt-2 mh">
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">2nd instalment request letter </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3 drop_cont">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Form GFR 12A </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3" style="display:none">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+<div class="col-md-3 "><div class="form-group">
+<label class="control-label">Form Format-III</label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3"  style="display:none">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Is interest earned on 1st installment funds nil? </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3"  style="display:none">
+<label class="control-label">Bank to upload expenditure statement stamped and signed by a bank official and a CA </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+
+
+</div>
+
+<div class="row odd fld_sm mh">
+
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">1<sup>st</sup> instalment amount received</label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3"  style="display:none">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Declaration that the terms & conditions of the 1st instalment release   letter, has been met by the bank</label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3"  style="display:none">
+<label class="control-label">Provision to upload document </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+</div>
+
+
+
+<div class="row odd fld_sm mh">
+
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Photos of interior & exterior of the building taken from different angles in broad daylight </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<div class="clear"></div>
+<div class="form-group mt-3"  style="display:none">
+<label class="control-label">Provision to upload photos in word, PDF and image formats </label>
+<input name="filename" id="myFile" type="file" class="form-control">
+</div>
+</div></div>
+
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Calculation of notional interest, if interest earned on 1st installment is nil</label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+
+</div>
+
+<div class="row odd fld_sm">
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Approval of DG-NIRDPR to release the funds [to be visible only to NIRDPR, to be uploaded by NIRDPR, not a mandatory field]</label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+
+</div>
+
+</div>
+
+
+<div class="field_set">
+<h3>2<sup>nd</sup> Instalment post-availing the funds</h3>
+<div class="row odd pt-2">
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Date of credit   </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Amount received  </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Interest deducted, if any </label>
+<input type="text" id="" class="form-control" value="" name="">
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">TDS amount, if any  </label>
+<input type="text" id="" class="form-control req" value="" name="" aria-required="true" aria-invalid="true" required="">
+
+</div></div>
+</div>
+
+<div class="row odd fld_sm">
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Details of issues</label>
+<textarea id="other" name="other" rows="4" cols="50" class="form-control req" aria-required="true" aria-invalid="true" required=""></textarea>
+
+
+</div></div>
+</div>
+</div>
+
+<div class="field_set">
+<h3>Building completion documents for each RSETI (for completed buildings only)</h3>
+
+
+<div class="row odd pt-2">
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">RSETI name </label>
+<select class="form-control req" required="">Photos of interior &amp; exterior of the building taken from different angles in broad daylight
+ <option value="select" selected="">- Select all RSETIs -</option>
+<option value="Yes">RSETIs 1</option>
+<option value="No">RSETIs 2</option>
+</select>
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Final GFR 12A </label>
+<input name="filename" id="myFile" type="file" class="form-control" aria-required="true" aria-invalid="true" required="">
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Final Format-III</label>
+<input name="filename" id="myFile" type="file" class="form-control" aria-required="true" aria-invalid="true" required="">
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Building completion certificate </label>
+<input name="filename" id="myFile" type="file" class="form-control" aria-required="true" aria-invalid="true" required="">
+</div></div>
+
+
+</div>
+
+<div class="row odd  mh">
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Land & building details </label>
+<input name="filename" id="myFile" type="file" class="form-control" aria-required="true" aria-invalid="true" required="">
+</div></div>
+
+<div class="col-md-6"><div class="form-group">
+<label class="control-label">Photos of interior & exterior of the building taken from different angles in broad daylight </label>
+<select class="form-control req" required="">
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+</div></div>
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Upload photos in word, PDF and image  formats</label>
+<input name="filename" id="myFile" type="file" class="form-control" aria-required="true" aria-invalid="true" required="">
+</div></div>
+
+
+
+</div>
+
+<div class="row odd ">
+
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Comments, if any  </label>
+<textarea id="other" name="other" rows="4" cols="50" class="form-control req" aria-required="true" aria-invalid="true" required=""></textarea>
+</div></div>
+<div class="col-md-3"><div class="form-group">
+<label class="control-label">Built-up area of the building </label>
+<select class="form-control req" required="">Photos of interior &amp; exterior of the building taken from different angles in broad daylight
+ <option value="select" selected="">- Select -</option>
+<option value="Yes">Greater than 8,000 sqft</option>
+<option value="No">Less than 8,000 sqft</option>
+</select>
+</div></div>
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="row text-center">
+<div class="col-md-12"><a class="btn btn-primary" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>
+<button type="submit" id="mainButton" class="btn btn-primary">Save</button>
+
+</div>
+
+</div>
+
+</form>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-footer text-center">
+  <!-- Grid container -->
+  <div class="row p-2 m-0">
+    <!--Grid row-->
+ 
+
+  <!-- Copyright -->
+  <strong></strong>
+  <div class="col-md-12" >
+    
+    <div class="text-center" >
+   2021 &copy Designed and  Developed by NIRDPR HYDERABAD.
+  </div></div>
+ </div>
+  <!-- Copyright -->
+</footer>
+
+ <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+    $('.collapse').on('shown.bs.collapse', function () {
+        $(this).prev().addClass('active-acc');
+    });
+
+    $('.collapse').on('hidden.bs.collapse', function () {
+        $(this).prev().removeClass('active-acc');
+    });
+
+});
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+ $(document).ready(function () {
+        $('.sidebar').mouseleave(function () {
+            //$('.collapse.show').addClass('d');
+        },
+                function () {
+                    $('.collapse.show').removeClass('show');
+					 $('.sidebar ul li.active-acc').removeClass('active-acc');
+                });
+    });
+	
+
+
+$(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+	
+	
+</script>
+
+<script>
+$(document).ready(function(){
+    $('#myselection', '#myselection2').on('change', function(){
+    	var demovalue = $(this).val(); 
+        $("div.drop_cont").hide();
+        $("#show"+demovalue).show();
+    });
+});
+</script>
+<style>
+.drop_cont{
+	display:none;
+    padding:0;
+}  .fld_sm .form-control {
+    max-width: 262px;
+}
+</style>
+
+</body>
+</html>
